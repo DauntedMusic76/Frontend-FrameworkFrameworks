@@ -1,0 +1,117 @@
+<!-- link -->
+<div class="link"><a href="#!muangay">Trang chủ</a> / Đăng kí</div>
+<!-- link -->
+
+<!-- thong tin -->
+<div class="row login">
+  <div class="col-sm-3"></div>
+  <div class="col-sm-6 row">
+    <div class="col-sm-6">
+      <img src="Image/dangki.jpg" alt="" />
+      <h4>QUYỀN LỢI THÀNH VIÊN</h4>
+      <ul>
+        <li>mua hàng khắp thế giới cực dễ dàng</li>
+        <li>Theo dõi chi tiết đơn hàng, địa chỉ thanh toán dễ dàng</li>
+        <li>Nhận nhiều chương trình ưu đãi hấp dẫn từ chúng tôi</li>
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <div class="dang-nhap"><a href="#!dangnhap">ĐĂNG NHẬP</a></div>
+      <div class="dang-ki"><a href="#!dangki">ĐĂNG KÍ</a></div>
+      <div class="thong-tin">
+        <form name="regForm">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Họ :</label>
+            <input
+              type="text"
+              ng-model="dangki.ho"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              required
+              name="txtFirstName"
+            />
+          </div>
+          <span style="color: red" ng-show="regForm.txtFirstName.$invalid"
+            >Vui lòng nhập họ</span
+          >
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Tên :</label>
+            <input
+              type="text"
+              ng-model="dangki.ten"
+              class="form-control"
+              id="exampleInputPassword1"
+              name="txtLastName"
+              required
+            />
+          </div>
+          <span style="color: red" ng-show="regForm.txtLastName.$invalid"
+            >Vui lòng nhập tên</span
+          >
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >Số điện thoại :</label
+            >
+            <input
+              type="number"
+              ng-model="dangki.sdt"
+              class="form-control"
+              id="exampleInputPassword1"
+              minlength="10"
+              maxlength="13"
+              name="txtPhoneNumber"
+            />
+          </div>
+          <span style="color: red" ng-show="regForm.txtPhoneNumber.$invalid"
+            >Đây không phải số điện thoại</span
+          >
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >Email :</label
+            >
+            <input
+              type="email"
+              ng-model="dangki.email"
+              class="form-control"
+              id="exampleInputPassword1"
+              name="txtEmail"
+            />
+          </div>
+          <span style="color: red" ng-show="regForm.txtEmail.$invalid"
+            >Sai định dạng email</span
+          >
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >Mật khẩu :</label
+            >
+            <input
+              type="password"
+              ng-model="dangki.matkhau"
+              class="form-control"
+              id="exampleInputPassword1"
+              minlength="6"
+              maxlength="20"
+              name="txtPassword"
+            />
+          </div>
+          <span style="color: red" ng-show="regForm.txtPassword.$invalid"
+            >Mật khẩu chỉ từ 6 đến 20 kí tự</span
+          >
+        </form>
+        <button ng-disabled="regForm.$invalid" ng-click="reg()">ĐĂNG KÍ</button> <br />
+        <p>
+          Highland coffee CPG cam kết bảo mật và sẽ không bao giờ đăng hay chia
+          sẻ thông tin mà chưa có sự đồng ý của bạn
+        </p>
+        <hr />
+        <h6>Hoặc đăng kí qua</h6>
+        <button>FACEBOOK</button>
+        <button>GOOGLE</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3"></div>
+</div>
+<hr />
+<!-- thong tin -->

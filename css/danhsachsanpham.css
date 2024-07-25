@@ -1,0 +1,50 @@
+
+
+/* list */
+.sort p {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+.sort p button {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(204, 44, 44);
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.san-pham .col-sm-3 .card {
+    height: 450px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.san-pham .card-header {
+    width: 100%;
+    height: 300px;
+}
+
+.san-pham a img {
+    width:100%;
+    height: 100%;
+}
+
+.san-pham a {
+    text-decoration: none;
+    font-size: small;
+    color: black;
+    font-size: 15px;
+}
+
+.san-pham button {
+    border: 2px solid red;
+    color: red;
+    background-color: white;
+    width: 75%;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+/* list */

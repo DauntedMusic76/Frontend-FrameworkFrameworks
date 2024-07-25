@@ -1,0 +1,162 @@
+
+
+/* banner */
+.banner {
+    margin-top: 20px;
+    width: 100%;
+    height: 270px;
+    background-color: red;
+}
+
+.banner a img {
+    width: 100%;
+    height: 100%;
+}
+/* banner */
+
+/* icon */
+.noi-dung {
+    width: 100%;
+    height: 100px;
+    /* background-color: white; */
+}
+
+.noi-dung .icon {
+    width: calc(100% / 6);
+    height: 100%;
+    text-align: center;
+    padding: 15px;
+    float: left;
+    /* background-color: aquamarine; */
+}
+
+.noi-dung .icon a img {
+    width: 35%;
+    height: 70%;
+}
+
+.noi-dung .icon a {
+    color: rgb(204, 45, 45);
+    text-decoration: none;
+}
+/* icon */
+
+/* uu dai */
+.uu-dai > div {
+    position: relative;
+    border: 2px solid rgb(204, 45, 45);
+    background-color: rgb(233, 252, 255);
+    width: calc(25% - 5px);
+    height: 210px;
+    margin-left: 4px;
+}
+
+.uu-dai h4 {
+    color: rgb(204, 45, 45);
+}
+
+.uu-dai p {
+    font-size: small;
+}
+
+.uu-dai div button {
+    position: absolute;
+    width: 70px;
+    border-radius: 5px;
+    background-color: rgb(204, 45, 45);
+    color: white;
+    border: none;
+    right: 10px;
+    bottom: 10px;
+}
+/* uu dai */
+
+/* deal */
+.sale {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    padding: 5px;
+    position: relative;
+    background-color: antiquewhite;
+}
+
+.sale div {
+    padding: 10px;
+    color: red;
+}
+
+.sale img {
+    width: 30px;
+    height: 40px;
+    margin-right: 10px;
+    float: left;
+}
+
+.sale .all {
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+}
+
+.sale .all button {
+    width: 150px;
+    height: 30px;
+    background-color: rgb(204, 45, 45);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+/* deal */
+
+/* list */
+.san-pham .col-sm-3 .card {
+    height: 450px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.san-pham .card-header {
+    width: 100%;
+    height: 300px;
+}
+
+.san-pham a img {
+    width:100%;
+    height: 100%;
+}
+
+.san-pham a {
+    text-decoration: none;
+    font-size: small;
+    color: black;
+    font-size: 15px;
+}
+
+.san-pham button {
+    border: 2px solid red;
+    color: red;
+    background-color: white;
+    width: 75%;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.ban-chay {
+    background-color: rgb(204, 45, 45);
+    width: 50%;
+    height: 45px;
+    border-radius: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ban-chay a {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/* list */
+

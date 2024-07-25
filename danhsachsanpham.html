@@ -1,0 +1,76 @@
+
+
+      <!-- Danh sach san pham -->
+      <h2
+        style="margin-top: 20px; margin-bottom: 20px; color: rgb(244, 44, 44)"
+      >
+        DANH SÁCH SẢN PHẨM
+      </h2>
+      <div class="sort">
+        <p>
+          Sắp xếp theo :
+          <button ng-click="sortBy('name')" class="rounded">Tên (A-Z)</button>
+          <button ng-click="sortBy('-name')" class="rounded">Tên (Z-A)</button>
+          <button ng-click="sortBy('price')" class="rounded">
+            Giá (Thấp ->cao)
+          </button>
+          <button ng-click="sortBy('-price')" class="rounded">
+            Giá (Cao -> thấp)
+          </button>
+        </p>
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control"
+            ng-model="search"
+            placeholder="Tìm kiếm sản phẩm..."
+          />
+        </div>
+      </div>
+      <div class="row san-pham">
+        <div
+          class="col-sm-3"
+          ng-repeat="p in filteredProducts = (products|nameFilter:search|orderBy:prop|limitTo:8:begin)"
+        >
+          <div class="card">
+            <div class="card-header">
+              <a href="#!chitietsanpham/{{p.id}}" ng-click="viewProduct(p.id)" ng-click="viewProduct(p.id)">
+                <img src="Image/{{p.picture}}" alt="" />
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="#!chitietsanpham/{{p.id}}" ng-click="viewProduct(p.id)">{{p.name|uppercase}}</a> <br />
+              <a href="#!chitietsanpham/{{p.id}}" ng-click="viewProduct(p.id)" style="color: red; font-size: small"
+                >{{p.price}} VNĐ</a
+              >
+              <br />
+              <button class="rounded" ng-click="addToCart(p)">Thêm Vào Giỏ Hàng</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="" ng-click="first()"
+              ><i class="fas fa-hand-point-up"></i
+            ></a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="" ng-click="prev()"
+              ><i class="fas fa-hand-point-left"></i
+            ></a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="" ng-click="next()"
+              ><i class="fas fa-hand-point-right"></i
+            ></a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="" ng-click="last()"
+              ><i class="fas fa-hand-point-down"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <!-- Danh sach san pham -->

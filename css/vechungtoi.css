@@ -1,0 +1,74 @@
+.vechungtoi {
+    background-color: white;
+    min-height: 300px;
+}
+
+.vechungtoi a {
+    text-decoration: none;
+    color: rgb(126, 69, 69);
+    font-weight: bold;
+    /* padding-left: 20px; */
+}
+
+.row .col-sm-7 img {
+    width: 100%;
+}
+
+.vechungtoi a button {
+    border: 2px solid red;
+    width: 250px;
+    height: 40px;
+    background-color: white;
+    color: red;
+}
+
+.vechungtoi2 {
+    background-color: #bd945d;
+    min-height: 300px;
+}
+
+.vechungtoi2 a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    /* padding-left: 20px; */
+}
+
+.vechungtoi2 .a1 {
+    color: white;
+    font-weight: bold;
+}
+
+.vechungtoi2 a .button-right {
+    border: 2px solid white;
+    width: 250px;
+    height: 40px;
+    background-color: #bd945d;
+    color: white;
+    margin-left: 270px;
+}
+
+.vechungtoi3 {
+    background-color: #8e5a2d;
+    min-height: 300px;
+}
+
+.vechungtoi3 a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    /* padding-left: 20px; */
+}
+
+.vechungtoi3 strong {
+    color: white;
+    font-weight: bold;
+}
+
+.vechungtoi3 a button {
+    border: 2px solid white;
+    width: 250px;
+    height: 40px;
+    background-color: #8e5a2d;
+    color: white;
+}

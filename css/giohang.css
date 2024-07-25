@@ -1,0 +1,44 @@
+/* link */
+.link {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    padding: 10px;
+    color: red;
+    background-color: rgb(206, 206, 206);
+}
+
+.link a {
+    color: rgb(151, 151, 151);
+    text-decoration: none;
+}
+
+.link a:hover {
+    color: red;
+}
+/* link */
+
+.table img {
+    height: 100px;
+    width: 100px;
+}
+
+/* phuong thuc thanh toan */
+.thanh_toan {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.thanh_toan button {
+    margin-left: 200px;
+    width: 40%;
+    height: 40px;
+    background-color: rgb(204, 44, 44);
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+/* phuong thuc thanh toan */

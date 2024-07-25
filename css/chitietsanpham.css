@@ -1,0 +1,67 @@
+/* link */
+.link {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    padding: 10px;
+    color: red;
+    background-color: rgb(206, 206, 206);
+}
+
+.link a {
+    color: rgb(151, 151, 151);
+    text-decoration: none;
+}
+
+.link a:hover {
+    color: red;
+}
+/* link */
+
+/* san pham */
+.chi-tiet {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 500px;
+    /* background-color: blueviolet; */
+}
+
+.chi-tiet>.col-sm-4 {
+    min-height: 500px;
+    /* background-color: aqua; */
+}
+
+.chi-tiet img {
+    height: 270px;
+}
+
+.chi-tiet div div .img-thumbnail {
+    height: 80px;
+    width: 80px;
+}
+/* san pham */
+
+/* Thong tin */
+.chi-tiet > .col-sm-8 > h3 {
+    font-weight: bold;
+}
+
+.chi-tiet > .col-sm-8 input {
+    width: 500px;
+    height: 40px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.chi-tiet > .col-sm-8 .rounded {
+    width: 500px;
+    height: 40px;
+    border: none;
+    background-color: rgb(204, 45, 45);
+    color: white;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+/* Thong tin */

@@ -1,0 +1,9 @@
+.image img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.row .info {
+    padding-left: 50px;
+    padding-right: 50px;
+}

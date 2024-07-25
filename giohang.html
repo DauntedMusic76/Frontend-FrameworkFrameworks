@@ -1,0 +1,66 @@
+      <!-- link -->
+      <div class="link"><a href="muangay.html">Trang chủ</a> / Giỏ hàng</div>
+      <!-- link -->
+
+      <!-- gio hang -->
+      <h3>DANH SÁCH SẢN PHẨM</h3>
+      <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Tên sản phẩm</th>
+                <th>Ảnh đại diện</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr ng-repeat="c in cart|orderBy:prop">
+                <td>{{c.name}}</td>
+                <td><img src="Image/{{c.picture}}" alt=""></td>
+                <td>{{p.price}} VNĐ</td>
+                <td><input type="number" step="1" value="1" min="1" ng-model="c.quantity"></td>
+                <td>{{c.price * c.quantity}} VNĐ</td>
+                <td><button class="btn bg-danger text-light">Cập nhật</button></td>
+                <td><button class="btn bg-danger text-light" ng-click="delete(c.id)">Xóa</button></td>
+            </tr>
+            <tr>
+                <td colspan="5">Tổng giá tiền : </td>
+                <td colspan="2">{{getTotalAmount()}}</td>
+            </tr>
+            <tr>
+                <td colspan="5">Phương thức thanh toán</td>
+                <td colspan="2"><a href="phuongthucthanhtoan.html"><button class="btn btn-danger" style="width: 100%;">TẠI ĐÂY</button></td></a>
+            </tr>
+        </tbody>
+      </table>
+      <!-- gio hang -->
+
+      <!-- phuong thuc thanh toan -->
+      <div class="thanh_toan">
+        <h3>Phương Thức Thanh Toán</h3>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Nhập email" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Họ và tên" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Số điện thoại" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Địa chỉ" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="inputGroupSelect01">Phương thức thanh toán</label>
+          <select class="form-select" id="inputGroupSelect01">
+            <option selected>Chọn phương thức</option>
+            <option value="1">Nhận hàng và thanh toán</option>
+            <option value="2">Thanh toán qua thẻ tín dụng</option>
+          </select>
+        </div>
+        <button class="rounded">thanh toán</button>
+      </div>
+      <!-- phuong thuc thanh toan -->

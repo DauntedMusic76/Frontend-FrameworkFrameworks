@@ -1,0 +1,83 @@
+
+
+      <!-- link -->
+      <div class="link">
+        <a href="muangay.html">Trang chủ</a> / Đăng nhập tài khoản
+      </div>
+      <!-- link -->
+
+      <!-- thong tin -->
+      <div class="row login">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6 row">
+          <div class="col-sm-6">
+            <img src="Image/dangki.jpg" alt="" />
+            <h4>QUYỀN LỢI THÀNH VIÊN</h4>
+            <ul>
+              <li>mua hàng khắp thế giới cực dễ dàng</li>
+              <li>Theo dõi chi tiết đơn hàng, địa chỉ thanh toán dễ dàng</li>
+              <li>Nhận nhiều chương trình ưu đãi hấp dẫn từ chúng tôi</li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <div class="dang-nhap"><a href="#!dangnhap">ĐĂNG NHẬP</a></div>
+            <div class="dang-ki"><a href="#!dangki">ĐĂNG KÍ</a></div>
+            <div class="thong-tin">
+              <form name="loginForm">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Email :</label
+                  >
+                  <input
+                    type="email"
+                    ng-model="try.email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    name="txtEmail"
+                  />
+                </div>
+                <span style="color: red" ng-show="loginForm.txtEmail.$invalid"
+                  >Sai định dạng email</span
+                >
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Mật khẩu :</label
+                  >
+                  <input
+                    type="password"
+                    ng-model="try.password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    maxlength="20"
+                    minlength="6"
+                    name="txtPassword"
+                  />
+                </div>
+                <span
+                  style="color: red"
+                  ng-show="loginForm.txtPassword.$invalid"
+                  >Mật khẩu phải từ 6 đến 20 kí tự</span
+                >
+              </form>
+              <a
+                href="#!quenmatkhau"
+                style="color: red; text-decoration: none"
+                >Quên mật khẩu ???</a
+              >
+              <button ng-disabled="loginForm.$invalid" ng-click="login()">ĐĂNG NHẬP</button> <br />
+              <p>
+                Highland coffee CPG cam kết bảo mật và sẽ không bao giờ đăng hay
+                chia sẻ thông tin mà chưa có sự đồng ý của bạn
+              </p>
+              <hr />
+              <h6>Hoặc đăng nhập qua</h6>
+              <button>FACEBOOK</button>
+              <button>GOOGLE</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+      <hr />
+      <!-- thong tin -->

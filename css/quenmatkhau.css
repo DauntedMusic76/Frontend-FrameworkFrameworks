@@ -1,0 +1,88 @@
+/* link */
+.link {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    padding: 10px;
+    color: red;
+    background-color: rgb(206, 206, 206);
+}
+
+.link a {
+    color: rgb(151, 151, 151);
+    text-decoration: none;
+}
+
+.link a:hover {
+    color: red;
+}
+/* link */
+
+/* login */
+.login {
+    min-height: 500px;
+    /* background-color: cyan; */
+}
+
+/* anh */
+.login > .col-sm-6 .col-sm-6 img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+/* anh */
+
+/* dang nhap & dang ki */
+.dang-nhap {
+    text-align: center;
+    width: 50%;
+    float: left;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    /* background-color: aquamarine; */
+}
+
+.dang-ki {
+    text-align: center;
+    color: gray;
+    width: 50%;
+    float: left;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    /* background-color: azure; */
+}
+
+.dang-nhap, .dang-ki {
+    height: 40px;
+    padding-top: 5px;
+}
+
+.dang-nhap a, .dang-ki a {
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}
+
+/* dang nhap & dang ki */
+
+.thong-tin button {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+.thong-tin p {
+    font-size: small;
+    text-align: center;
+}
+
+.thong-tin p a {
+    text-decoration: none;
+    color: red;
+}
+
+/* login */
+
